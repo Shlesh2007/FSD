@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1 </title>
+    </head>
+    <body>
+        <pre> <h1><p>           HTML Tags Example   </p></h1></pre>
+        <p>
+            <ol type="a" start="27">
+                <li>list 1</li>
+                <ol type="circle">
+                    <li>list 1.1</li>
+                    <li><mark></ins>list 1.2</mark></li>
+                    <ol type="I" reversed start="3">
+                        <li>list 1.2.3</li>
+                        <li>list 1.2.2</li>
+                        <ol type="a">
+                            <li>list 1.2.2.1</li>
+                            <li>list <sub>1.2.2.2</sub></li>
+                            <li><del>list 1.2.2.3</del></li>
+                            <li><u>list <sup>1.2.2.3</sup></u></li>
+                        </ol>
+                        <li> list 1.2.1</li>
+                    </ol>
+                </ol>
+                <li> List 2</li>
+                <ul type="none">
+                    <li>List 2.1</li>
+                    <li><b>List 2.2</b></li>
+                        <ol type="A" start="26">
+                        <li><a href="https://www.wikipedia.org" target="_blank">List 2.2.1</a></li>
+                        </ol>
+                        <ol type="A" start="27">
+                        <li>List 2.2.2</li>
+
+                        </ol>
+                </ul>
+                <li> List 3</li>
+                <ol type="1">
+                    <li><b>list 3.1</b></li>
+                    <li><img src="khaby.jfif" alt="Here is Khaby" height="30" width="50"/>
+                    </li>
+                </ol>
+        </p>
+    </body>
+</html>
