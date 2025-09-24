@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Form</title>
+    </head>
+    <body>
+        <!--<form action="#" method="post" enctype="multipart/form-data"></form> for input type = post in sem 4-->
+        <form action="#" method="get">
+            <fieldset align="center">
+                <legend align="center">Information</legend>
+                <label for "uname" >Username</label>
+                <input type="text" id="uname"
+                       name="uname" autofocus
+                       autocomplete="on" placeholder="User Name"
+                       maxlength="30" required/><!--Default type is aldready text,autofocus should only apply to any one field,requred makes it compulsory to enter user name-->
+            <!--For Email Input-->
+            <br>
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="abc@gmail.com" required name="eid">
+
+            <br>
+            <br>
+            <label>Password</label>
+            <input type="password" placeholder="Abc@123" minlength="8" maxlength="12" required /><!--name attribute is not passesd so password will not append-->
+            
+            <br>
+            <br>
+            <label>Phone No.</label>
+            <input type="tel" name="phone" placeholder="9081738236" required/>
+        </fieldset>
+            <fieldset align="center">
+                <legend align="center">Submit Form</legend>
+                <input type="submit" value="Submit Form"/>
+            </fieldset>
+        </form>
+        <h1></h1>
+    </body>
+</html>
