@@ -7,7 +7,7 @@
         <!--<form action="#" method="post" enctype="multipart/form-data"></form> for input type = post in sem 4-->
         <form action="#" method="get">
             <fieldset align="center">
-                <legend align="center">Information</legend>
+                <legend align="center"><h2>Information</h2></legend>
                 <label for "uname" >Username</label>
                 <input type="text" id="uname"
                        name="uname" autofocus
@@ -18,21 +18,99 @@
             <br>
             <label>Email</label>
             <input type="email" placeholder="abc@gmail.com" required name="eid">
-
+            
+            <!--Password Input-->
             <br>
             <br>
             <label>Password</label>
             <input type="password" placeholder="Abc@123" minlength="8" maxlength="12" required /><!--name attribute is not passesd so password will not append-->
             
+            <!--Phone no. Input-->
             <br>
             <br>
             <label>Phone No.</label>
             <input type="tel" name="phone" placeholder="9081738236" required/>
+
+            <!--Gender Input(radio)-->
+            <br>
+            <br>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" checked>Male <!--checked makes it automatic required and checked will automatically selected-->
+            <input type="radio" name="gender" value="female" >Female<br/>
+            <!--User can only select one option ,name attributes matters if we give different values to both male and female than user can select both options-->
+
+            <!--Hobby Input(checkbox)-->
+            <br>
+            <br>
+            <label>Hobby</label>
+            <input type="checkbox" name1="hobby" value="music" checked/>Music
+            <input type="checkbox" name2="hobby" value="drawing"/>Drawing</br>
+            <!--In checkbox user can select multiple options so name attrbute can be different,opposite of radio-->
+            
+            <!--Textarea tag-->
+            <label>Message</label></br>
+            <textarea name="msg" rows="10" cols="20" placeholder="Type Your Message"></textarea><!--Hi how are you is default value-->
+        </fieldset>
+        <fieldset align="center">
+            <legend> Additional Information </legend>
+            <label>DOB</label>
+
+            <input type="date" name="dob" min="2025-09-03" max="2025-09-28"/><br><br>
+            <label> Select Age</label>
+
+            <input type="number" name="age" min="18" max="35" value="20" step='1'/><br>
+            <label> Price</label>
+
+            <input type="range" name="price" mn="100" max="1000" step="50" value="200"><br><br>
+            
+            <label>Color</label>
+            <input type="color" name="clr" value='#000000'/><br><br>
+
+            <label>Select City</label>
+            <select name="city">
+                <option value=" ">Select</option> 
+                <option value="Ahmedabad">Ahmedabad</option> 
+                <option value="Surat">Surat</option> 
+                <option value="Ghandhinagar">Ghandhinagar</option> 
+                <option value="Rajkot">Rajkot</option></select> <br><br>
+
+             <label>Select Branch</label>
+             <select name="branch">
+                <option value="Select" Selected hidden> select</option><!--Selected disabled or select hidden-->
+                <optgroup label="Computer">
+                <option value="CSE">CSE</option> 
+                <option value="It">It</option>
+                </optgroup>
+                
+                <optgroup label="Other">
+                <option value="EC">CSE</option> 
+                <option value="Civil">It</option>
+                </optgroup>
+             </select><br><br>
+             
+             <input list="browsers" name="browser">
+             <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Edge"></option>
+                <option value="Safari"></option>
+             </datalist>
+
+
         </fieldset>
             <fieldset align="center">
                 <legend align="center">Submit Form</legend>
-                <input type="submit" value="Submit Form"/>
+                <input type="reset" value="Reset Form"/>
+                <input type="button" value="Submit Button"/>
+                <button type="submit">Submit Here</button>
+                <button>Button</button>
             </fieldset>
+        <fieldset align="center">
+            <legend>Hidden Read oly disabled</legend>
+            <input type="hidden" name="uid" value="1234"/>
+            <input type="text" value="cse" readonly/>
+            <input type="text" name="promo" value="LJU500" disabled/>
+
+        </fieldset>
         </form>
         <h1></h1>
     </body>
