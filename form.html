@@ -109,9 +109,16 @@
             <input type="hidden" name="uid" value="1234"/>
             <input type="text" value="cse" readonly/>
             <input type="text" name="promo" value="LJU500" disabled/>
-
         </fieldset>
         </form>
-        <h1></h1>
+        <form action="submit.html" method="post" enctype="multipart/form-data" align="center">
+            <!-- for Exam--:- form action="#"default method is get-->
+            <legend>Upload File</legend>
+            <input type="file" name="pic" accept=".png,.jpg,.jpeg" multiple required/>
+            <input type="submit" value="Upload"/>
+            <input type="reset"/>
+            <br>
+            <br>
+        </form>
     </body>
 </html>
