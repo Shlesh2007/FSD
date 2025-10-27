@@ -1,3 +1,8 @@
-h1{
-    color:red
+h2{
+    color:purple;
+    fonr-size:50px;
+}
+p{
+    color:rgb(86, 61, 177)!important;
+    text-align:right;
 }
