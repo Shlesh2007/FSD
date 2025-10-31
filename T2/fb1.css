@@ -1,0 +1,29 @@
+h1{
+    font-family:copperplate,fantasy;
+    font-size:50px;
+    font-style: italic;
+    font-weight:900;
+    text-transform:capitalize;
+    font-variant:small-caps;
+}
+h3{
+    text-align:center;
+    /*border-color:blue;*/
+    border-color:red green blue pink;/* red for top bottom and blue for left and right*/
+    /*border-width:3px;*/
+    border-width:7px 3px 4px 3px;
+    border-style:solid dotted double;/* without this border is not visible*/
+}   
+h3{
+    text-align:center;
+    border-color:green;
+    border-style:none double;
+    border-width:8px;
+}
+p{/*short hand*/
+    /*border:3px solid red/*Solid(Style is mandatory*/
+    border-left:8px double blue;
+    border-right:8px double green;
+    border-top:3px dotted blue;
+    border-bottom:5px dashed purple;
+}
