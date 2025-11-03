@@ -1,0 +1,44 @@
+<html>
+    <style>
+        .p1::first-line{
+            color:blue;
+            font-size:20px;
+            font-style:italic;
+        }
+        .p1::first-letter{
+            color:red;
+            font-size:60px;
+            text-decoration:underline;
+        }
+        li::selection{ /*::selection(to apply to all data in our page)*/
+            background-color:agua;
+            color:red;
+        }
+        .p1::before{
+            /*content:"Note that:";*/
+            content:url("img1.jfif")/*to add img*/
+        }
+        .p1::after{
+            /*windows+.*/
+            content:"༼ つ ◕_◕ ༽つ    ¯\_(ツ)_/¯"
+        }
+        ul li::marker{
+            font-size: 40px;
+            color:purple;
+            content:"👍🏻"
+        }
+
+    </style>
+    <body>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quae non sit nesciunt temporibus, eveniet odio doloribus quam inventore veritatis, dolores delectus magnam quas ad distinctio iste fuga labore sunt!
+        Facere aspernatur modi, obcaecati error optio minus reprehenderit quisquam eveniet alias. Esse earum minima magnam facilis repellendus odit omnis voluptas culpa, nihil tenetur aperiam eos laborum quis. Incidunt, id nihil.
+        Voluptatem delectus sapiente doloremque possimus dicta eaque eveniet atque, culpa ex provident vel ipsa. Neque dicta accusamus doloribus, saepe culpa a non laboriosam? Sapiente voluptate, inventore voluptates eligendi rem magnam.
+        Alias nisi officia tempore, non quae deserunt magni obcaecati possimus velit ex adipisci ut enim blanditiis quas ratione similique cum voluptates quo quis dolor? Aperiam asperiores ad similique voluptatum ullam.
+        Officiis nesciunt quae delectus, suscipit facilis corrupti magnam nobis! Aliquid, ipsum quaerat vitae ad consequatur, ea sequi consequuntur adipisci ab pariatur eligendi aut? Ex, harum modi fugit veniam quaerat cupiditate?</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </body>
+</html>
