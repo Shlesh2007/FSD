@@ -1,0 +1,28 @@
+<html>
+    <style>
+    .a1{
+    /*default property is all */
+    transition-property:transform,background-color,border-radius;
+    transition-duration:10s,5s,3s;
+    transition-delay: 0s,2s,3s;
+    transition-timing-function:ease-in-out;
+    margin:100px auto;
+    width:150px;
+    height:150px;
+    border-radius:100px;
+    border:10px dotted;
+    }
+    .a1:hover{
+        transform:rotate(900deg) scale(1,1) skew(5deg,5deg);
+        background-color: rgb(214, 44, 44);
+        padding:30px;
+        border-radius:100px;
+        border:8ps dotted;
+        box-shadow: 20px 20px 20px black;
+    }
+    </style>
+    <body>
+        <img src="img3.jfif" class="a1"  alt="image"/>
+        <img src="img5.jfif" class="a1"  alt="image"/>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <style>
+        .d1{
+            margin:100px auto;
+            width:150px;
+            height:150px;
+            border-radius:500px;
+            font-size:30px;
+            border:2px solid;
+            background-color:cornflowerblue;
+            text-align: center;
+            padding:20px;
+        }
+        .d2,.d3{
+            height:200px;
+            width:300px;
+            display:block;
+            padding:20px;
+            border:3px solid;
+            margin:50px auto;
+        }
+        .d1:hover{
+            transform:translate(50px,50px);/*if  translate(50px) only 50x in parameterer then x will be 50px(same for scale,skew*/
+            background-color: orchid;
+            padding:30px;
+            border-radius:100px;
+            border:8px solid;
+        }
+        .d1:hover{
+            transform:rotate(50deg);
+            background-color: orchid;
+            padding:30px;
+            border-radius:100px;
+            border:8px solid;
+        }
+        .d2:hover{
+            transform:scale(1.5);/*scale(width,height)*/
+        }
+        .d3:hover{
+            transform:scale(0.5,0.7);
+        }
+        .d2:hover{
+            transform:scale(-1);
+        }
+        .d3:hover{
+            transform:skew(-20deg,-20deg);/*(HORIZONTAL,VERTICAL)*/
+        }
+        .d1:hover{
+            transform:scale(2,1.5) skew(5deg,7deg) rotate(45deg);
+        }
+    </style>
+    <body>
+        <div class="d1">Transform</div>
+        <img src="img3.jfif" class="d2" alt="image"/>
+        <img src="img5.jfif" class="d3"alt="image"/>
+    </body>
+</html>
