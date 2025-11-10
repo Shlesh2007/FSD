@@ -1,0 +1,62 @@
+<html>
+    <style>
+        body{
+            background-image: url("img6.avif");
+        }
+        .b1{
+            width:150px;
+            height:150px;
+            box-shadow: 10px 10px 20px black;
+            border-radius: 10px;
+            background-color: lightcyan;
+            border:3px solid lightcoral;
+            margin:15px;
+        }
+         @keyframes abc{
+            0%{
+                top:0;
+                left:0;
+                background-color: brown;
+            }
+            15%{
+                top:0%;
+                left:50%;
+                background-color: yellowgreen;
+            }
+            25%{
+                top:25%;
+                left:0%;
+                background-image: url("img3.jfif");
+            }
+            55%{
+                top:50%;
+                left:0%;
+                background-color: blue;
+            }
+            75%{
+                top:50%;
+                left:75%;
+                background-color: blueviolet;
+            }
+            100%{
+                top:0%;
+                right:0%;
+                background-image: url("img6.avif");
+                background-size: contain;
+                
+            }
+         }
+        .b1{
+            animation-name:abc;
+            animation-duration:10s;
+            animation-delay:1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            position: absolute;
+        }
+    </style>
+    <body>
+        <div class="b1">hello</div>
+    </body>
+</html>
