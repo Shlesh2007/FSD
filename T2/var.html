@@ -1,0 +1,40 @@
+<html>
+    <style>
+        /*:root{/*Global Scope
+            --b:blue;
+            --r:red;
+            --all:solid dotted dashed double;
+            }
+        p{/*Local Scope var=variable variable name should meaningful
+            --i:italic;
+            border-style:var(--all);
+            font-style:var(--i);
+        }*/
+        :root{
+            --textred:red;
+            --p20:20px;
+            --all:dotted double dashed solid;
+            --textblue:blue;
+        }
+        h1{
+            --fs:50px;
+            font-size:var(--fs);
+            color:var(--textred);
+        }
+        h2{
+            --textblue:lightblue;
+            color:var(--textblue);
+        }
+        p{
+            padding:var(--p20);
+            color:var(--textblue);
+            border-style:var(--all);
+            border-width:8px;
+        }
+    </style>
+    <body>
+        <h2>Test</h2>
+        <h1>Hi</h1>
+        <p>Good Morning</p>
+    </body>
+</html>
