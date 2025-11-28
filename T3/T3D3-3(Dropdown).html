@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+    </button>
+  <ul class="dropdown-menu" >
+    <li><a  href="#" class="dropdown-item">FSD-1</a></li>
+    <li><a  href="#" class="dropdown-item">PYTHON-1</a></li>
+    <li><a  href="#" class="dropdown-item">DE</a></li>
+  </ul>
+</div>
+<h1>-------with div instead of ul-------</h1>
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+    </button>
+    <div class ="dropdown-menu">
+        <strong class="dropdown-header">SEM-3</strong>
+        <a href="#" class="dropdown-item active">FSD-1</a>
+        <a href="#" class="dropdown-item">Python-1</a>
+        <div class="dropdown-divider"></div>
+        <span class="dropdown-header">SEM-4</span>
+        <a href="#" class="dropdown-item disabled">FSD-2</a>
+    </div>
+</div>
+<h1>----------colllapse------------------</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-6"><!--Not Needed in exam code-->
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#linkcollapse">FSD-1</a>
+    </div>
+    <div class="collapse" id="linkcollapse">
+        <div class="card card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi id porro, fugiat veniam voluptate commodi nulla animi asperiores libero, itaque maiores temporibus! Voluptatem quam inventore, iure eum quo officia eius!
+        </div>
+    </div>
+  </div>
+</div>
+<h2>--------------------------------------------</h2>
+<button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#buttoncollapse">Python-1</button>
+<div class="collpase show" id="buttoncollapse">
+  <div class="card card-body">Hello Guyss Welcome to the Channel Yt Shlesh!!</div>
+</div>
+</body>
+</html>
