@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            for(let i=0;i<5;i++){//entry control loop
+                document.write(i,"\n");
+            }
+
+            let q=5
+            while (q<10){//entry control loop
+                document.write(q,"\n");
+                q++
+            }
+            do{//exit control loop
+                document.write(q,"\n")
+                q++;
+            }while(q<20);
+
+            //for...of(//preferreble of arrays)
+            var f=["banana","apple","pineappple","watermelon","mango"]
+            for(let i of f){
+                document.writeln(i);
+            }
+            for(let j in f){//in gives index
+                document.write(j)
+            }
+            //for...in(//not preferreble of arrays as it gives index instead of keys)
+            var obj={name:"abc",age:20,city:"Ahmedabad"}
+            for(let key in obj){
+                document.writeln(obj[key]);
+                document.writeln(key,":",obj[key]);
+            }
+            //---------------------------------------------------//
+            var x=3;
+            if(true){
+                var x=10;
+            }
+            document.writeln(x);
+            //-----------------------------------------//
+            let x1=3;
+            if(true){
+                let x1=10;
+            }
+            console.log(x1);
+            document.writeln(x1);
+            //-------------------------------//
+            var i=5;
+            for(var i=0;i<2;i++){
+                document.writeln(i);
+            }
+            document.writeln(i)
+            //--------------------------------//
+            //prefer let inside loops and in condition
+            let i1=5;
+            for(let i1=0;i1<2;i1++){
+                document.writeln(i1);
+            }
+            document.writeln(i1)
+            //------------------------------//
+        </script>
+    </head>
+</html>
