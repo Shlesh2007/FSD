@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let a=20;
+            if(a>5){
+                console.log("Greater",a)
+            }
+            else{
+                console.log("Lesser",a)
+            }
+            var role="admin";
+            if (role=="admin"){
+                console.log("Full access  Granted");
+            }
+            else if(role=="editor"){
+                console.log("Edit Access Granted");
+            }
+            else if(role=="viewers"){
+                console.log("Read Only");
+            }
+            else{
+                console.log("No Acess");
+            }
+            //switch(variable)
+            switch(role){
+                case "admin":
+                    console.log("Full Access Granted");
+                    //document.write("Admin ")
+                    break
+                case "Editor":
+                    console.log("Edit Access is Granted");
+                    break
+                case "Viewers":
+                    console.log("Read Only");
+                    break
+                default:
+                    console.log("No Access is Granted")
+                    break
+            }
+            //Ternay
+            let age=19;
+            let result=age>=18 ?"Adult":"Minor";
+            document.write(result)
+        </script>
+    </head>
+</html>
