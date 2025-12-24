@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            for(let i=0;i<5;i++){//entry control loop
+                document.write(i,"\n");
+            }
+
+            let q=5
+            while (q<10){//entry control loop
+                document.write(q,"\n");
+                q++
+            }
+            do{//exit control loop
+                document.write(q,"\n")
+                q++;
+            }while(q<20);
+
+            //for...of(//preferreble of arrays)
+            var f=["banana","apple","pineappple","watermelon","mango"]
+            for(let i of f){
+                document.writeln(i);
+            }
+            for(let j in f){//in gives index
+                document.write(j)
+            }
+            //for...in(//not preferreble of arrays as it gives index )
+            var obj={name:"abc",age:20,city:"Ahmedabad"}
+            for(let key in obj){
+                document.writeln(obj[key]);
+                document.writeln(key,":",obj[key]);
+            }
+        </script>
+    </head>
+</html>
