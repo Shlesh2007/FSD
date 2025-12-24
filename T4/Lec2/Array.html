@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            //push(),po(),map(),filter(),foreach(),find(),includes()
+            let names=["abc","xyz","par"];
+            
+            var a=names.push("Mno");//adds in last and returns the length of the new updated array
+            document.writeln(names);
+            document.writeln(a);
+            
+            var b=names.pop();//removes last element and return that element
+            document.writeln(names);
+            document.writeln(b);
+
+            let num=[10,20,30];
+            let mul=num.map(n=> n*2);//it calles arrow function (multply by 2 and return new array)
+            document.writeln(mul);
+
+            let filt=num.filter(n=> n>=20);
+            document.writeln(filt);
+
+            document.write(names.includes("abc"));
+            document.write(names.includes("def"));
+
+            let user=[{name:"abc",id:1},{name:"xyz",id:2},{name:"kkjh",id:3}];
+            let u=user.find(u1=> u1.id==1);
+            document.write(JSON.stringify(u));//or console.log(u)
+        </script>
+    </head>
+</html>
