@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function printdata(fn,ln){
+                document.write("<h1>"+fn+" "+ln+" "+"</h1");
+            }
+            function addition(a,b){
+                return a+b;
+            }
+            function add(a,b){
+                document.write('AdDition of '+a+'and '+b+ 'is :'+addition(a,b))
+            }
+            var a=function(a,b){//assigning a function to variable 
+                return a*b;
+            }
+            document.write(a(5,6));
+        </script>
+        <button onclick='printdata("Nidhi","Seta")' style="color:green;left:50px">PRINT</button>
+        <button onclick='add(3,4)' style="color:blue;left:50px">ADD</button>
+    </head>
+</html>
