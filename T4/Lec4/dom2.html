@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunction(){
+        document.getElementById("pid").removeAttribute('title');
+        var d=document.getElementsByClassName("pc");
+        d[1].innerHTML="Updated Paragraph";
+        for (d1 of d){
+            d1.style.color="red";
+            d1.style.fontSize="35px";
+            d1.style.textTransform="uppercase";
+        }
+        d[2].style.textDecoration="underline";
+        document.getElementById("pid1").style.color="blue";//sequence matters
+        document.querySelector("img").setAttribute("src","img3.jfif");//since we are not giving specific like get by id or get by class we have to use . and #
+        document.querySelector("#heading1").style.border="5px dotted blue";//#heading1 means Id
+        document.querySelector(".heading2").style.textAlign="center";//.heading2 means class 
+
+        var i=document.querySelectorAll('img');
+        for (i1 of i){
+            i1.setAttribute("width","500");
+        }
+        i[1].setAttribute("height","500");
+        }
+    </script>
+</head>
+<body>
+    <p id="pid" title="Hyper Text Markup Language">HTML</p>
+    <p class="pc" id="pid1">Para 1</p>
+    <p class="pc" id="pid2">Para 2</p>
+    <p class="pc" id="pid3">Para 3</p>
+    <img src="img1.png" width="300" height="300">
+    <img src="img2.jpg" width="300" height="300">
+    <h2 id=heading1>Heading</h2>
+    <h2 class=heading2>Heading</h2>
+    <button onclick="myfunction()">Apply</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--  
+Document---
+        Root----
+            Head   body---
+                    <a>---     <p>---
+                    id,href        class,id,title 
+-->
+<html>
+      <head>
+        <script>
+              function apply(){
+                    document.getElementById("p1").innerHTML="<b>Hello </b>";       
+                    document.getElementById("head1").innerHTML="<b>H3 Heading</b>";       
+                    document.getElementById("img1").setAttribute("src","1.png")       
+                    document.getElementById("link1").getAttribute("href");       
+                }
+        </script>
+        </head>
+        <body>
+           <p id="p1">Welcome</p>     
+           <h3 id="head1">Document Object Model</h3>
+           <img id="img1">
+           <a href="https://www.google.com" id="link1">Google</a>
+           <button onclick="apply()">Modify</button>
+        </body>
+</html>

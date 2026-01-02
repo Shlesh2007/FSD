@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+        function fun(){
+            var a=document.getElementById("id1").value;
+            alert(`Welcome ${a}`)
+        }
+        function mychange(){
+            var a1=document.getElementById("i1");
+            a1.value=a1.value.toUpperCase();
+            a1.style.color="blue";
+        }
+        function myinput(){
+            var a2=document.getElementById("i1");
+            a2.style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="fun()">
+        <input type="text" onchange="mychange()" oninput="myinput()" id="i1">
+        <input type="submit">
+    </form>
+</body>
+</html>

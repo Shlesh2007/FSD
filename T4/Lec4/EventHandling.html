@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHandling</title>
+    <script>
+        function oc(x){
+            x.style.color="green";
+            x.innerHTML="Updated";
+        }
+        function md(x){
+            x.style.backgroundColor='pink';
+            x.style.bordrs="5px dashed blue";
+            x.innerHTML="Mouse Down";
+        }
+        function mu(x){
+            x.style.backgroundColor='white';
+            x.innerHTML="Mouse Up";
+        }
+        function mo(x){
+            x.innerHTML='Mouse Out';
+            x.style.backgroundColor="red";
+        }
+        function mover(x){
+            x.innerHTML="Mouse Over";
+            x.style.backgroundColor="white";
+            x.style.color="black";
+        }
+    </script>
+</head>
+<body>
+    <p onclick="oc(this)">Hello</p>
+    <p onclick="this.style.color='blue',this.style.fontSize='35px'">Hello Everyone</p>
+    <div id="d1" style="padding:20px;border:1px dotted yellow;" onmousedown="md(this)" onmouseup="mu(this)">
+        Hello
+    </div>
+    <div id="d2" style="padding:20px;background-color:black;color:white;" onmouseout="mo(this)" onmouseover="mover(this)">
+        Mouse over/Out</div>
+    
+    
+</body>
+</html>
