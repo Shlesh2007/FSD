@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myform(e) {
+            e.preventDefault();
+            var obj = document.forms["f1"]["i1"].value;
+            var obj1=document.forms["f1"]["i2"].value;
+            var l=document.forms["f1"].length;
+            if (obj.length===0){
+                alert("Invalid");
+            }
+            else if(obj1===""){
+                alert("Email must be filled out");
+        }
+        else{
+            alert(`Welcome ${obj},Email is Valid: ${obj1}`);
+            alert("Valid");
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="f1" onsubmit="myform(event)">
+        <input type="text"  id="u1" name="i1" placeholder="Username">
+        <input type="email" id="e1" name="i2" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
