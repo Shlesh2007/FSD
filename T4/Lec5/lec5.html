@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+        function Kd(e){
+           alert(`Key: ${e.key} KeyCode: ${e.keyCode}`);
+        } 
+
+        function md(e){
+            var b=e.button;
+            if(b === 0){
+                alert("Left Button Clicked");
+            }
+            else if(b === 1)
+            {
+                alert("Middle Button Clicked");
+            }
+            else if(b === 2)
+            {
+                alert("Right Button Clicked");
+            }
+            else{
+                alert(`Invalid`)
+            }
+        }
+    </script>
+</head>
+<body onkeydown="Kd(event)">
+    <!-- key keyCode Butoon -->
+     <div onmousedown="md(event)" style="width:200px;height:200px;border:3px solid">
+        Middle Button Event
+     </div>
+</body>
+</html>
