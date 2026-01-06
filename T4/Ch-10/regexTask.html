@@ -1,0 +1,30 @@
+<!-- Regular Expression -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegexTask</title>
+    <script>
+        function test(){
+            var u=document.getElementById("i1").value;
+            var p=document.getElementById("i2").value;
+            var u1=/^[a-z A-Z]{6,12}/;
+            var p1=/[_0-9!]{6,12}/;
+           if (u1.test(u) && p1.test(p)){
+                alert(`Valid User✅`);
+            }
+            else{
+                alert(`Invalid ❌`);
+            }
+        }
+    </script>
+ </head>
+ <body>
+    <form>
+        <input type="text" id="i1">    
+        <input type="text" id="i2">    
+        <input type="submit" onclick="test()"/>
+    </form>
+ </body>
+ </html>
