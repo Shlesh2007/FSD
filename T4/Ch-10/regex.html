@@ -1,0 +1,50 @@
+<!-- Regular Expression -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+    <script>
+        function test(){
+            var u=document.getElementById("i1").value;
+           //var p=/abc/i;//must conain abc in anywhere in the string ex:-shleshabc,abcdfd
+           //var p=/[abc]/i;//a or b or c or ab or c (not like all combined required as abc) in anywhere in the string ex:-shleshab,cdfd
+           //var p=/abc/i:-make you string isensitive ,both small and capital accepts.
+           //var p=/[^abc]/i;//all three should not alone ex- a not allowed,b not allowed,abc not allowed,bh-allowed,ajhj-allowed
+           //var p=/^a/;//your string must be starts with -: a
+           //var p=/a$/;//string must end with -: a
+           //var p=/^ab$/;//only ab accepted
+           //var p=/^ab*c$/;//*:ocuurence of b 0 or more
+           //var p=/^ab+c$/;//+:ocuurence of b 1 or more
+           //var p=/colou?r/;//?: occurence of u 0 or 1 not more than 1
+           //var p=/[0-9]/;//0,1,2,3,4...9 atleast any one from 0 to 9 should have in string
+           //var p=/^[0-9]+$/;//only digits allowed,
+           //var p=/^[0-9]{10}$/;//only 10 numbers length allowed(like mobile no.)
+           //var p=/^[a-z]{3,5}$/;//only 3 to 5 small alphabets allowed {minimum,maximum}
+           //var p=/^[a-zA-Z]{5,}$/;//minimum 5
+           //var p=/[^0-9]/;//individual 0 to 9 not allowed
+           //var p=/(x|y)/;//x or y ==>>[xy] both same
+           //var p=/\d/;//==[0-9]
+           //var p=/\D/;==[^0-9]
+           //var p=/\w/;==[A-Za-z0-9_] for email
+           //var p=/\W/;//==[^A-Za-z0-9_] for special character
+            
+            //for email:- 
+           var p = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*\.\w{2,}$/;
+           if (p.test(u)){
+                alert(`Valid ✅`);
+            }
+            else{
+                alert(`Invalid ❌`);
+            }
+        }
+    </script>
+ </head>
+ <body>
+    <form>
+        <input type="text" id="i1">    
+        <input type="submit" onclick="test()"/>
+    </form>
+ </body>
+ </html>
