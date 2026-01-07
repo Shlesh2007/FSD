@@ -8,23 +8,34 @@
     <script>
         function test(){
             var u=document.getElementById("i1").value;
-            var p=document.getElementById("i2").value;
-            var u1=/^[a-z A-Z]{6,12}/;
-            var p1=/[_0-9!]{6,12}/;
-           if (u1.test(u) && p1.test(p)){
-                alert(`Valid User✅`);
+            var pass=document.getElementById("i2").value;
+            var msg=document.getElementById("p1");
+            var p1=/^[_@0-9]/;
+            var p2=/^[A-Za-z0-9@!-]{6,8}$/;
+            var p3=/^[6-9][0-9]{9}$/;
+            if(u.length===0 || pass.length===0){
+                msg.innerHTML="Both Feilds are required";
+            }
+            else if(p1.test(u)){
+                msg.innerHTML="Username must start with _ @ or digit";
+            }
+            else if(p2.test(pass)){
+                msg.innerHTML="Password must be 6 to 8 characters long";
             }
             else{
-                alert(`Invalid ❌`);
+                msg.style.color="green";
+                msg.innerHTML="Valid";
             }
         }
     </script>
  </head>
  <body>
     <form>
-        <input type="text" id="i1">    
-        <input type="text" id="i2">    
-        <input type="submit" onclick="test()"/>
+        <input type="text" id="i1" placeholder="user">    
+        <input type="text" id="i2" placeholder="Pass">    
+        <input type="text" id="i3" placeholder="MobileNo">    
+        <input type="button" onclick="test()" value="Submit"/>
     </form>
+    <p id="p1">Hello</p>
  </body>
  </html>

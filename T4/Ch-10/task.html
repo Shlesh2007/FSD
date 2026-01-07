@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <script>
+        function savedata(){
+            var u=document.getElementById("i1").value;
+            localStorage.setItem("Username",u);
+            localStorage.setItem("un",u);
+        }
+        function showdata(){
+            var u=localStorage.getItem("Username");
+            var p=localStorage.getItem("un");
+            console.log(u,p);
+        }
+        function cleardata(){
+            localStorage.clear();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="i1" placeholder="user">
+        <button onclick="savedata()">Save</button>
+        <button onclick="showdata()">Show</button>
+        <button onclick="cleardata()">clear</button>
+    </form>
+    <p id="p1">Shlesh Here!!!</p>
+</body>
+</html>

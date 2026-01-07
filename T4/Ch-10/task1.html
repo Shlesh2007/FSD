@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function savedata(e){
+            e.preventDefault();
+            var product=document.getElementById("product").value;
+            var price=document.getElementById("price").value;
+            var discount=document.getElementById("discount").value;
+            localStorage.setItem("product",product);
+            localStorage.setItem("price",price);
+            localStorage.setItem("discount",discount);
+            alert("Saved to localStorage");
+        }
+        function removediscount(e){
+            e.preventDefault();
+            localStorage.removeItem("discount");
+            console.log("Remaining items in localStorage:");
+            for(let i=0; i<localStorage.length; i++){
+                let key = localStorage.key(i);
+                let value = localStorage.getItem(key);
+                console.log(`${key}: ${value}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- create a form with 3 fie;ds product,price,discount save button
+    when the usder clicks save stoiore to localStorage:p[rofuct,price,discount]
+    display saved to local 
+    rempve discount from localbutton through button
+    after removal display the remaining in console -->
+    <form>
+        <input type="text" id="product" placeholder="Product">
+        <input type="text" id="price" placeholder="Price">
+        <input type="text" id="discount" placeholder="Discount">
+        <button onclick="savedata(event)">Save</button>
+        <button onclick="removediscount(event)">Remove Discount</button>
+    </form>
+</body>
+</html>
