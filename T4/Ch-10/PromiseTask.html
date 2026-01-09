@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let order=new Promise((resolve,reject)=>
+        {
+            let success=true;
+            //setTimeout(fun,time in ms)
+            //setTimeinterval(fun,time in ms) both has same syntax
+            setTimeout(()=>
+            {
+                if (success){
+                    resolve("Order Success");
+                }
+                else{
+                    reject("Failed");
+                }
+            },3000)
+        })
+        order
+        .then(r=>console.log(r))
+        .catch(e=>console.log(e))
+        .finally(()=>console.log("Completed"))
+        function fetchdata(){
+            return new Promise((resolve)=>
+            {
+                setTimeout(()=>{
+                    resolve(5);
+                },2000);
+            })
+        }
+        async function getdata(){
+            console.log("Waiting....");
+            console.log("Calculating....");
+            const v=await fetchdata();//await should always in async function
+            const sum=v+10;
+            console.log(`Sum is ${sum}`);
+        }
+        getdata();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
